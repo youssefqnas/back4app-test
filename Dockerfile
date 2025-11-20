@@ -27,5 +27,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN playwright install chromium
 RUN playwright install-deps
 
-# أمر التشغيل (هنا هنشغل السيرفر الوهمي)
+# --- التعديل هنا ---
+# لازم نعرف المنصة إننا هنستخدم البورت 8080
+EXPOSE 8080
+
+# أمر التشغيل
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app", "--timeout", "300"]
