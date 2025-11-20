@@ -1,0 +1,8 @@
+requests
+playwright
+beautifulsoup4
+clickhouse-driver
+lxml
+pyvirtualdisplay
+flask
+gunicorn
